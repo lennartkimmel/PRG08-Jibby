@@ -25,6 +25,6 @@ class Game {
 
 
 // load
-window.addEventListener("load", function() {
-    let g:Game = new Game()
+window.addEventListener("load", () => {
+    new Game()
 })
