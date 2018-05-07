@@ -1,20 +1,25 @@
+/// <reference path="jibby.ts"/>
+
 class Game {
 
-    private car : Car;
-    private block : Block;
+    private jibby : Jibby;
 
     constructor() {
         let container = document.getElementById("container");
-        this.car = new Car(container);
-        this.block = new Block(container);
-
+        this.jibby = new Jibby(container);
         requestAnimationFrame(() => this.gameLoop());
     }
 
     private gameLoop(){
-        this.car.draw();
-        this.block.draw();
+        this.jibby.update();
+        this.updateUI();
         requestAnimationFrame(() => this.gameLoop());
+    }
+
+    private updateUI():void{
+        document.getElementsByTagName("food")[0].innerHTML = Math.round(this.jibby.food).toString();
+        document.getElementsByTagName("happyness")[0].innerHTML = Math.round(this.jibby.happyness).toString();
+        document.getElementsByTagName("hygiene")[0].innerHTML = Math.round(this.jibby.hygiene).toString();
     }
 } 
 
