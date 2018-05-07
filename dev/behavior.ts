@@ -1,7 +1,7 @@
 interface Behavior {
-    jibby:Jibby;
-    performBehavior() : void;
-    onWash():void;
-    onEat():void;
-    onPet():void;
+    jibby:Jibby
+    performBehavior() : void
+    onWash():void
+    onEat():void
+    onPet():void
 }

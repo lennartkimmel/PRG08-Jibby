@@ -41,29 +41,29 @@ Jibby is een [tamagotchi](https://en.wikipedia.org/wiki/Tamagotchi) die je in le
 
 ```
 class Jibby {
-    public myBehavior:Behavior;
+    public myBehavior:Behavior
     constructor(){
-        this.myBehavior = new Jumping(this);
+        this.myBehavior = new Jumping(this)
     }
     public update(){
-        this.myBehavior.update();
+        this.myBehavior.update()
     }
 }
 
 class Jumping implements Behavior {
-    public jibby : Jibby;
+    public jibby : Jibby
     constructor(j:Jibby){
-        this.jibby = j;
+        this.jibby = j
     }
     public update(){
         // het gedrag van Jibby aanpassen
-        this.jibby.myBehavior = new Sleeping(this.jibby);
+        this.jibby.myBehavior = new Sleeping(this.jibby)
     }
 }
 
 interface Behavior {
-    jibby:Jibby;
-    update() : void;
+    jibby:Jibby
+    update() : void
 }
 ```
 
@@ -75,7 +75,7 @@ De game heeft drie click listeners. De code voor de 'onClick' handlers staat in 
 class Jibby {
     constructor(){
         // listener toevoegen
-        washButton.addEventListener("click", (e:MouseEvent) => this.onWash(e));
+        washButton.addEventListener("click", (e:MouseEvent) => this.onWash(e))
     }
 
     private onWash(e:MouseEvent):void {
