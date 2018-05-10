@@ -12,6 +12,7 @@ Gebruik het **strategy pattern** om het gedrag van Jibby te programmeren. Elk ge
 - Jibby checkt in de update functie of zijn stats te laag worden, als een stat onder 0 komt wordt het gedrag **Dead**
 - Daarna roept Jibby de update functie van zijn gedrag aan.
 
+Gedag
 - Idle: hierin gaan alle stats geleidelijk omlaag.
 - Dead: hierin gebeurt niets.
 
@@ -21,6 +22,7 @@ Gebruik het **strategy pattern** om het gedrag van Jibby te programmeren. Elk ge
 - Jibby heeft keypress event listeners, hiermee roept hij event handlers aan die in het gedrag staan!
 - Als jibby dood is reageert hij niet meer...
 
+Gedrag
 - Douchen: de hygiene en happyness gaan omhoog
 - Eten: Jibby krijgt minder honger
 - Aaien: de happyness gaat omhoog
