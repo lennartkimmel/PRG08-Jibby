@@ -12,7 +12,7 @@ Gebruik het **strategy pattern** om het gedrag van Jibby te programmeren. Elk ge
 - Jibby checkt in de update functie of zijn stats te laag worden, als een stat onder 0 komt wordt het gedrag **Dead**
 - Daarna roept Jibby de update functie van zijn gedrag aan.
 
-Gedag
+Gedrag
 - Idle: hierin gaan alle stats geleidelijk omlaag.
 - Dead: hierin gebeurt niets.
 
@@ -27,18 +27,25 @@ Gedrag
 - Eten: Jibby krijgt minder honger
 - Aaien: de happyness gaat omhoog
 
+Verander de look van Jibby afhankelijk van zijn gedrag, met deze code:
+`element.style.backgroundImage = "url('idle.png')"`
+
 ## Bouw een timer
 
 In de update functie van het gedrag hou je een **counter** bij. Gebruik de counter om:
-- Douchen en Eten: na een tijdje gaat Jibby automatisch terug naar de Idle status.
-- Idle: na een tijdje valt Jibby in slaap. Maak een nieuw Sleeping gedrag. Bedenk zelf wat er gebeurt met met gebruikersinput als Jibby slaapt!
+- Douchen, Aaien en Eten: na een tijdje gaat Jibby automatisch terug naar de Idle status.
 
 ## Complex gedrag
 
-- Maak een Angry gedrag
+Sleeping
+- Als jibby een tijdje Idle is valt hij in slaap. Als hij slaapt gaan zijn stats niet zo snel omlaag.
+- Als jibby slaapt kan je hem wakker maken door hem aan te klikken
+
+Angry
 - Jibby wordt boos als je hem aait terwijl hij eet of als hij onder de douche staat
 - Jibby wordt boos als je hem onder de douche zet terwijl hij slaapt
-- Kan je nog meer gedrag bedenken? Wat gebeurt er als je hem aanraakt als hij dood is?
+
+Kan je nog meer gedrag bedenken? Wat gebeurt er als je hem aanraakt als hij dood is?
 
 ## Resultaat
 
@@ -89,6 +96,4 @@ class Jibby {
     }
 }
 ```
-### Afbeeldingen aanpassen
 
-`element.style.backgroundImage = "url('idle.png')"`
