@@ -1,5 +1,8 @@
 # PRG08 Week3 oefening1
 
+
+[Demo Jibby](https://hr-cmgt.github.io/PRG08-Jibby-completed/)
+
 ## Jibby
 
 Jibby is een [tamagotchi](https://en.wikipedia.org/wiki/Tamagotchi) die je in leven moet houden. Dit doe je door hem aandacht en eten te geven, en schoon te houden. Wanneer je Jibby niet goed verzorgt zal hij dood gaan door een gebrek aan eten, aandacht of hygiene.
