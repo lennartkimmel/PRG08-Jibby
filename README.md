@@ -28,6 +28,9 @@ Gedrag
 - Op dit moment verandert alleen het plaatje. Later zal je dezelfde `onEat`, `onWash` en `onPet` functies in het gedrag van Jibby moeten aanroepen.
 - Als jibby dood is reageert hij niet meer...
 
+## Opdracht UML
+- Maak vooraf een klassendiagram voor de uitwerking van de opdracht. 
+
 ## Opdracht Bouw de basis van Jibby
 
 - Jibby checkt in zijn update functie of zijn statistieken te laag zijn geworden. Als een statistiek onder 0 komt wordt het gedrag `Dead`
