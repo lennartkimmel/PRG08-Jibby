@@ -52,7 +52,7 @@ In de update functie van het gedrag hou je een **counter** bij. Gebruik de count
 ## Opdracht Bouw Pet en Eat Behavior
 
 Pas de Wash uitwerking ook toe op `Pet` en `Eat`.
-Klik op Jibby, Jibby gaat naar Pet Behavior. Hygiene wordt bij elke klik 2 eenheden opgehoogd
+Klik op Jibby, Jibby gaat naar Pet Behavior. Happyness wordt bij elke klik 2 eenheden opgehoogd
 KLik op Eat, Jibby gaat naar Eat Behavior. Eat duurt 1 seconde en hunger wordt 10 eenheden opgehoogd. 
 
 ## Opdracht abstracte class aanmaken. 
